@@ -2,46 +2,56 @@
 //VARS
 $black: #000;
 $logo: #fed993;
+$white: #fff;
+$green: #c0ffc2;
+$turkis: #c0f7ff;
+$purple: #e0b8eb;
+$red: #fe9393;
+$orange: #f9a46b;
 
 @mixin logoanimation {
 	@-webkit-keyframes logoanimation {
-		0% { color: $logo; }
-		20% { color: #93fe96; }
-		40% { color: #93d2fe; }
-		60% { color: #f593fe; }
-		80 { color: #fe9393; }
-		100% { color: $black; }
+		0% { color: $white; }
+		16% { color: $green; }
+		32% { color: $turkis; }
+		48% { color: $purple; }
+		64% { color: $red; }
+		80% { color: $orange;}
+		100% { color: $white; }
 	}
 	@-moz-keyframes logoanimation {
-		0% { color: $logo; }
-		20% { color: #93fe96; }
-		40% { color: #93d2fe; }
-		60% { color: #f593fe; }
-		80 { color: #fe9393; }
-		100% { color: $black; }
+		0% { color: $white; }
+		16% { color: $green; }
+		32% { color: $turkis; }
+		48% { color: $purple; }
+		64% { color: $red; }
+		80% { color: $orange;}
+		100% { color: $white; }
 	}
 	@-o-keyframes logoanimation {
-		0% { color: $logo; }
-		20% { color: #93fe96; }
-		40% { color: #93d2fe; }
-		60% { color: #f593fe; }
-		80 { color: #fe9393; }
-		100% { color: $black; }
+		0% { color: $white; }
+		16% { color: $green; }
+		32% { color: $turkis; }
+		48% { color: $purple; }
+		64% { color: $red; }
+		80% { color: $orange;}
+		100% { color: $white; }
 	}
 	@keyframes logoanimation {
-		0% { color: $logo; }
-		20% { color: #93fe96; }
-		40% { color: #93d2fe; }
-		60% { color: #f593fe; }
-		80 { color: #fe9393; }
-		100% { color: $black; }
+		0% { color: $white; }
+		16% { color: $green; }
+		32% { color: $turkis; }
+		48% { color: $purple; }
+		64% { color: $red; }
+		80% { color: $orange;}
+		100% { color: $white; }
 	}
 }
 
 @mixin logo {
-	-webkit-animation: logoanimation 10s ease-in-out 0 infinite;
-	-moz-animation: logoanimation 10s ease-in-out 0 infinite;
-	-o-animation: logoanimation 10s ease-in-out 0 infinite;
-	-ms-animation: logoanimation 10s ease-in-out 0 infinite;
-	animation: logoanimation 10s ease-in-out 0 infinite;
+	-webkit-animation: logoanimation 10s ease-in-out 3s infinite;
+	-moz-animation: logoanimation 10s ease-in-out 3s infinite;
+	-o-animation: logoanimation 10s ease-in-out 3s infinite;
+	-ms-animation: logoanimation 10s ease-in-out 3s infinite;
+	animation: logoanimation 10s ease-in-out 3s infinite;
 }

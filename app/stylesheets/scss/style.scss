@@ -1,5 +1,12 @@
 @import 'system';
 
+@font-face {
+	font-family: test;
+	src: url('../../GoodDog.woff');
+	font-weight: normal;
+	font-stretch: condensed;
+}
+
 $black: #000;
 $logo: #fed993;
 
@@ -11,8 +18,8 @@ html {
 body { 
 	padding: 0;
 	box-sizing: border-box;
-	font-family: garamond, hevetica, serif; 
-	margin: 4px;
+	font-family: "adobe garamond", garamond, hevetica, serif; 
+	margin: 30px;
 	height: 99.2%;
 	background: #fff;
 }
@@ -35,32 +42,46 @@ body {
 	z-index: 10;
 
 	.content {
-		top: 35%;
+		top: 2%;
 		position:relative;
-		-webkit-transform: -50%, -50%;
+		
 
 		h1 {
-			color: $logo;
+			color: $white;
 			@include logo;
 			margin: 0;
+			font-size: 54px;
+			text-transform: lowercase;
+			font-weight: normal;
 		}
 
 		h2 {
-			max-width: 200px;
-			margin: 0 auto 25px auto;
+			max-width: 400px;
+			margin: 75px auto 25px auto;
 			color: $black;
-			font-style: italic;
+			font-weight: normal;
+			font-size: 41px;
 		}
 
 		p {
-			max-width: 400px;
+			max-width: 600px;
 			margin: 0 auto;
 			color: $black;
+			font-size: 18px;
+			font-family: arial, helvetica, sans-serif;
+			font-weight: normal;
+			line-height: 160%;
 		}
 	}
 }
 
 @include logoanimation;
+
+@media screen and(max-width: 768px) {
+	.container {
+		padding: 20px;
+	}
+}
 
 
 

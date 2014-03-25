@@ -1,3 +1,9 @@
+@font-face {
+  font-family: test;
+  src: url("../../GoodDog.woff");
+  font-weight: normal;
+  font-stretch: condensed; }
+
 html {
   height: 100%;
   width: 100%; }
@@ -5,8 +11,8 @@ html {
 body {
   padding: 0;
   box-sizing: border-box;
-  font-family: garamond, hevetica, serif;
-  margin: 4px;
+  font-family: "adobe garamond", garamond, hevetica, serif;
+  margin: 30px;
   height: 99.2%;
   background: #fff; }
 
@@ -25,99 +31,122 @@ body {
   background: rgba(255, 255, 255, 0.8);
   z-index: 10; }
 .container .content {
-  top: 35%;
-  position: relative;
-  -webkit-transform: -50%, -50%; }
+  top: 2%;
+  position: relative; }
 .container .content h1 {
-  color: #fed993;
-  -webkit-animation: logoanimation 10s ease-in-out 0 infinite;
-  -moz-animation: logoanimation 10s ease-in-out 0 infinite;
-  -o-animation: logoanimation 10s ease-in-out 0 infinite;
-  -ms-animation: logoanimation 10s ease-in-out 0 infinite;
-  animation: logoanimation 10s ease-in-out 0 infinite;
-  margin: 0; }
+  color: white;
+  -webkit-animation: logoanimation 10s ease-in-out 3s infinite;
+  -moz-animation: logoanimation 10s ease-in-out 3s infinite;
+  -o-animation: logoanimation 10s ease-in-out 3s infinite;
+  -ms-animation: logoanimation 10s ease-in-out 3s infinite;
+  animation: logoanimation 10s ease-in-out 3s infinite;
+  margin: 0;
+  font-size: 54px;
+  text-transform: lowercase;
+  font-weight: normal; }
 .container .content h2 {
-  max-width: 200px;
-  margin: 0 auto 25px auto;
-  color: black;
-  font-style: italic; }
-.container .content p {
   max-width: 400px;
+  margin: 75px auto 25px auto;
+  color: black;
+  font-weight: normal;
+  font-size: 41px; }
+.container .content p {
+  max-width: 600px;
   margin: 0 auto;
-  color: black; }
+  color: black;
+  font-size: 18px;
+  font-family: arial, helvetica, sans-serif;
+  font-weight: normal;
+  line-height: 160%; }
 
 @-webkit-keyframes logoanimation {
   0% {
-    color: #fed993; }
+    color: white; }
 
-  20% {
-    color: #93fe96; }
+  16% {
+    color: #c0ffc2; }
 
-  40% {
-    color: #93d2fe; }
+  32% {
+    color: #c0f7ff; }
 
-  60% {
-    color: #f593fe; }
+  48% {
+    color: #e0b8eb; }
 
-  80 {
+  64% {
     color: #fe9393; }
 
+  80% {
+    color: #f9a46b; }
+
   100% {
-    color: black; } }
+    color: white; } }
 
 @-moz-keyframes logoanimation {
   0% {
-    color: #fed993; }
+    color: white; }
 
-  20% {
-    color: #93fe96; }
+  16% {
+    color: #c0ffc2; }
 
-  40% {
-    color: #93d2fe; }
+  32% {
+    color: #c0f7ff; }
 
-  60% {
-    color: #f593fe; }
+  48% {
+    color: #e0b8eb; }
 
-  80 {
+  64% {
     color: #fe9393; }
 
+  80% {
+    color: #f9a46b; }
+
   100% {
-    color: black; } }
+    color: white; } }
 
 @-o-keyframes logoanimation {
   0% {
-    color: #fed993; }
+    color: white; }
 
-  20% {
-    color: #93fe96; }
+  16% {
+    color: #c0ffc2; }
 
-  40% {
-    color: #93d2fe; }
+  32% {
+    color: #c0f7ff; }
 
-  60% {
-    color: #f593fe; }
+  48% {
+    color: #e0b8eb; }
 
-  80 {
+  64% {
     color: #fe9393; }
 
+  80% {
+    color: #f9a46b; }
+
   100% {
-    color: black; } }
+    color: white; } }
 
 @keyframes logoanimation {
   0% {
-    color: #fed993; }
+    color: white; }
 
-  20% {
-    color: #93fe96; }
+  16% {
+    color: #c0ffc2; }
 
-  40% {
-    color: #93d2fe; }
+  32% {
+    color: #c0f7ff; }
 
-  60% {
-    color: #f593fe; }
+  48% {
+    color: #e0b8eb; }
 
-  80 {
+  64% {
     color: #fe9393; }
 
+  80% {
+    color: #f9a46b; }
+
   100% {
-    color: black; } }
+    color: white; } }
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px; } }
