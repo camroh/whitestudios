@@ -1,0 +1,47 @@
+
+//VARS
+$black: #000;
+$logo: #fed993;
+
+@mixin logoanimation {
+	@-webkit-keyframes logoanimation {
+		0% { color: $logo; }
+		20% { color: #93fe96; }
+		40% { color: #93d2fe; }
+		60% { color: #f593fe; }
+		80 { color: #fe9393; }
+		100% { color: $black; }
+	}
+	@-moz-keyframes logoanimation {
+		0% { color: $logo; }
+		20% { color: #93fe96; }
+		40% { color: #93d2fe; }
+		60% { color: #f593fe; }
+		80 { color: #fe9393; }
+		100% { color: $black; }
+	}
+	@-o-keyframes logoanimation {
+		0% { color: $logo; }
+		20% { color: #93fe96; }
+		40% { color: #93d2fe; }
+		60% { color: #f593fe; }
+		80 { color: #fe9393; }
+		100% { color: $black; }
+	}
+	@keyframes logoanimation {
+		0% { color: $logo; }
+		20% { color: #93fe96; }
+		40% { color: #93d2fe; }
+		60% { color: #f593fe; }
+		80 { color: #fe9393; }
+		100% { color: $black; }
+	}
+}
+
+@mixin logo {
+	-webkit-animation: logoanimation 10s ease-in-out 0 infinite;
+	-moz-animation: logoanimation 10s ease-in-out 0 infinite;
+	-o-animation: logoanimation 10s ease-in-out 0 infinite;
+	-ms-animation: logoanimation 10s ease-in-out 0 infinite;
+	animation: logoanimation 10s ease-in-out 0 infinite;
+}

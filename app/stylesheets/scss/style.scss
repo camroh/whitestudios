@@ -1,0 +1,69 @@
+@import 'system';
+
+$black: #000;
+$logo: #fed993;
+
+html { 
+	height: 100%;
+	width: 100%; 
+}
+
+body { 
+	padding: 0;
+	box-sizing: border-box;
+	font-family: garamond, hevetica, serif; 
+	margin: 4px;
+	height: 99.2%;
+	background: #fff;
+}
+
+.outer-container {
+	background: url("../../images/dummy.jpg") top center fixed no-repeat;
+	width: 100%;
+	height: 100%;
+
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0;
+	text-align: center;
+	position:relative;
+	background: rgba(255,255,255,0.8);
+	z-index: 10;
+
+	.content {
+		top: 35%;
+		position:relative;
+		-webkit-transform: -50%, -50%;
+
+		h1 {
+			color: $logo;
+			@include logo;
+			margin: 0;
+		}
+
+		h2 {
+			max-width: 200px;
+			margin: 0 auto 25px auto;
+			color: $black;
+			font-style: italic;
+		}
+
+		p {
+			max-width: 400px;
+			margin: 0 auto;
+			color: $black;
+		}
+	}
+}
+
+@include logoanimation;
+
+
+
+
+
+
