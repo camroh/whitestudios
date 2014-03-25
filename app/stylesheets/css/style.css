@@ -39,7 +39,6 @@ a {
   top: 2%;
   position: relative;
   max-width: 600px;
-  width: 600px;
   margin: 0 auto; }
 .container .content h1 {
   color: white;
@@ -160,4 +159,9 @@ a {
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 20px; } }
+    padding: 20px; }
+
+  .container .content .address {
+    display: block;
+    width: 100%;
+    margin-top: 40px; } }

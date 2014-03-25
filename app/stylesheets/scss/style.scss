@@ -29,7 +29,6 @@ a { color:$black;}
 	width: 100%;
 	height: 97%;
 	box-sizing: border-box;
-
 }
 
 .container {
@@ -46,7 +45,6 @@ a { color:$black;}
 		top: 2%;
 		position:relative;
 		max-width: 600px;
-		width: 600px;
 		margin: 0 auto;
 		
 
@@ -68,7 +66,6 @@ a { color:$black;}
 		}
 
 		p {
-
 			margin: 0 auto;
 			color: $black;
 			font-size: 18px;
@@ -90,6 +87,11 @@ a { color:$black;}
 @media screen and(max-width: 768px) {
 	.container {
 		padding: 20px;
+	}
+	.container .content .address {
+		display: block;
+		width: 100%;
+		margin-top: 40px;
 	}
 }
 
