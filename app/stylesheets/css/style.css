@@ -6,20 +6,25 @@
 
 html {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  box-sizing: border-box; }
 
 body {
   padding: 0;
-  box-sizing: border-box;
-  font-family: "adobe garamond", garamond, hevetica, serif;
+  font-family: garamond, hevetica, serif;
   margin: 30px;
-  height: 99.2%;
-  background: #fff; }
+  background: #fff;
+  height: 100%;
+  box-sizing: border-box; }
+
+a {
+  color: black; }
 
 .outer-container {
   background: url("../../images/dummy.jpg") top center fixed no-repeat;
   width: 100%;
-  height: 100%; }
+  height: 97%;
+  box-sizing: border-box; }
 
 .container {
   width: 100%;
@@ -32,7 +37,10 @@ body {
   z-index: 10; }
 .container .content {
   top: 2%;
-  position: relative; }
+  position: relative;
+  max-width: 600px;
+  width: 600px;
+  margin: 0 auto; }
 .container .content h1 {
   color: white;
   -webkit-animation: logoanimation 10s ease-in-out 3s infinite;
@@ -51,13 +59,16 @@ body {
   font-weight: normal;
   font-size: 41px; }
 .container .content p {
-  max-width: 600px;
   margin: 0 auto;
   color: black;
   font-size: 18px;
   font-family: arial, helvetica, sans-serif;
   font-weight: normal;
   line-height: 160%; }
+.container .content .address {
+  width: 49%;
+  display: inline-block;
+  margin-top: 80px; }
 
 @-webkit-keyframes logoanimation {
   0% {
