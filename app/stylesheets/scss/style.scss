@@ -1,12 +1,5 @@
 @import 'system';
 
-@font-face {
-	font-family: test;
-	src: url('../../GoodDog.woff');
-	font-weight: normal;
-	font-stretch: condensed;
-}
-
 html { 
 	height: 100%;
 	width: 100%; 
@@ -15,7 +8,7 @@ html {
 
 body { 
 	padding: 0;
-	font-family: garamond, hevetica, serif; 
+	font-family: "aktiv-grotesk-std", garamond, hevetica, serif; 
 	margin: 30px;
 	background: #fff;
 	height: 100%;
@@ -23,9 +16,11 @@ body {
 }
 
 a { color:$black;}
+a:hover { text-decoration: none;}
 
 .outer-container {
-	background: url("../../images/dummy.jpg") top center fixed no-repeat;
+	/* background: url("../../images/dummy.jpg") top center fixed no-repeat; */
+	background: #e1e1e1;
 	width: 100%;
 	height: 97%;
 	box-sizing: border-box;
@@ -44,7 +39,7 @@ a { color:$black;}
 	.content {
 		top: 2%;
 		position:relative;
-		max-width: 600px;
+		max-width: 630px;
 		margin: 0 auto;
 		
 
@@ -55,21 +50,23 @@ a { color:$black;}
 			font-size: 54px;
 			text-transform: lowercase;
 			font-weight: normal;
+			font-family: "adobe-garamond-pro", garamond, hevetica, serif; 
 		}
 
 		h2 {
 			max-width: 400px;
-			margin: 75px auto 25px auto;
+			margin: 80px auto 35px auto;
 			color: $black;
 			font-weight: normal;
-			font-size: 41px;
+			font-size: 35px;
+			font-style: italic;
+			font-family: "adobe-garamond-pro", garamond, hevetica, serif; 
 		}
 
 		p {
 			margin: 0 auto;
 			color: $black;
 			font-size: 18px;
-			font-family: arial, helvetica, sans-serif;
 			font-weight: normal;
 			line-height: 160%;
 		}
@@ -93,6 +90,8 @@ a { color:$black;}
 		width: 100%;
 		margin-top: 40px;
 	}
+	.hide-mobile { display: none;}
+	.container .content p { font-size: 0.9em;}
 }
 
 
