@@ -20,20 +20,13 @@ module.exports = function(grunt) {
 					livereload: true
 				}
 		},
-		uglify: {
-			options: {
-				mangle: false,
-				preserveComments: false,
-				compress: {
-					drop_console: true
-				}
-			},
-			my_target: {
+		cssmin: {
+			minify: {
 				files: {
-					'app/js/script.min.js': ['app/js/script.js']
+					'app/style.min.css': ['app/stylesheets/css/style.css']
 				}
 			}
-		},
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
@@ -42,6 +35,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	
 	grunt.registerTask('w', ['watch']);
-	grunt.registerTask('css', ['clean:css', 'cssmin']);
+	grunt.registerTask('css', ['cssmin:minify']);
 	
 };
