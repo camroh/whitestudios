@@ -7,9 +7,9 @@ html {
 }
 
 body { 
-	padding: 0;
+	padding: 30px;
+	margin: 0;
 	font-family: "aktiv-grotesk-std", garamond, hevetica, serif; 
-	margin: 30px;
 	background: #fff;
 	height: 100%;
 	box-sizing: border-box;
@@ -22,8 +22,7 @@ a:hover { text-decoration: none;}
 	/* background: url("../../images/dummy.jpg") top center fixed no-repeat; */
 	background: #e1e1e1;
 	width: 100%;
-	height: 97%;
-	box-sizing: border-box;
+	height: 100%;
 }
 
 .container {
@@ -37,7 +36,6 @@ a:hover { text-decoration: none;}
 	z-index: 10;
 
 	.content {
-		top: 2%;
 		position:relative;
 		max-width: 630px;
 		margin: 0 auto;
